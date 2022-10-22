@@ -1,0 +1,63 @@
+.slider-container {
+    height: 100vh;
+    display: inline-flex;
+    position: relative;
+    overflow-y: hidden;
+    transition: 0.75s;
+    -webkit-transition: 0.75s;
+    -moz-transition: 0.75s;
+    -ms-transition: 0.75s;
+    -o-transition: 0.75s;
+}
+.prev,
+.next {
+    background: none;
+    color: rgb(68, 79, 143);
+    text-shadow: -1px 2px rgb(42, 50, 92), -2px 3px 3px rgba(56, 56, 56, 0.568);
+    font-size: 5rem;
+    display: block;
+    position: fixed;
+    top: 50%;
+    border: none;
+    outline: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.prev {
+    left: 5%;
+}
+.next {
+    left: 95%;
+}
+.prev:hover,
+.next:hover {
+    color: rgb(100, 116, 207);
+    font-size: 7rem;
+    cursor: url("../assets/icons/cursorHM.png"), pointer;
+}
+.slider-item {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+.slider-item:first-of-type{
+    background-color: rgb(100, 236, 195);
+}
+.slider-item:nth-child(2) {
+    background-color: rgb(236, 192, 236);
+}
+.slider-item:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgb(215, 196, 238) 0%, rgb(120, 33, 219) 100%);
+    font-size: 2rem;
+    overflow-y: scroll;
+}

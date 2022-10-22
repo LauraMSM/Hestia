@@ -1,0 +1,25 @@
+.header {
+
+}
+
+.header_title {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.7em solid var(--th-color);
+}
+.header_h1 {
+    color: var(--nd-color);
+    font-size: 7rem;
+    text-shadow: -1px 3px #287b9c, -3px 5px 3px rgba(59, 59, 59, 0.589);
+}
+.logo {
+    width: 7em;
+}
+
+.header  a {
+    font-size: 2rem;
+}
