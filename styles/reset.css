@@ -110,6 +110,10 @@ h2, h3, h4 {
 p, a, li, button, input, label {
     font-family: var(--body-font);
 }
+p span {
+    color: var(--rd-color);
+    font-family: var(--subtitle-font);
+}
 
 /* SELECTED TEXT */
 ::-moz-selection {

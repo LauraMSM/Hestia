@@ -1,7 +1,3 @@
-.header {
-
-}
-
 .header_title {
     font-size: 2rem;
     text-align: center;
@@ -22,6 +18,17 @@
     margin: 0 auto;
 }
 
+.header_nav {
+    position: fixed;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 3;
+}
 .header_nav nav,
 .nav-container {
     font-size: 1.5rem;
@@ -44,7 +51,7 @@
 }
 .nav-item::before {
     content: '';
-    background-color: var(--th-color);
+    background-color: rgb(75, 176, 216);
     width: 10em;
     height: 0.25em;
     position: absolute;
@@ -58,7 +65,7 @@
     -o-transition: 0.5s;
 }
 .nav-item:hover a {
-    color: var(--rd-color);
+    color: var(--th-color);
 }
 .nav-item:hover::before {
     right: 0%;
@@ -83,4 +90,24 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     object-fit: cover;
+    object-position: center 54%;
+}
+
+.header_nav__fixed {
+    animation: switchNav 0.75s forwards;
+    -webkit-animation: switchNav 0.75s forwards;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+@keyframes switchNav {
+    50% {
+        top: 29%;
+    }
+    100% {
+        top: 5%;
+    }
 }

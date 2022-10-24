@@ -6,6 +6,8 @@ const nextBtn = $(".next");
 const prevBtn = $(".prev");
 prevBtn.style.display = "none";
 const sliderContainer = $(".slider-container");
+const nav = $(".header_nav");
+
 const sliderWidth = $$(".slider-item").length * 100;
 let sliderPos = 0;
 
@@ -13,11 +15,14 @@ let sliderPos = 0;
 nextBtn.addEventListener("click", () => {
     if ( sliderPos > (sliderWidth - 100) * -1 ) {
         sliderPos -= 100;
-        console.log(sliderPos + "|" + sliderWidth * -1);
         sliderContainer.style.transform = `translateX(${sliderPos}vw)`;
-
-        nextBtn.style.display = sliderPos === (sliderWidth - 100) * -1 ? "none" : "block";
         prevBtn.style.display = "block";
+
+        if ( sliderPos === (sliderWidth - 100) * -1 ) {
+            nextBtn.style.display = "none";           
+        };
+        
+        nav.classList.add("header_nav__fixed")
     };
 
 });
@@ -25,9 +30,14 @@ nextBtn.addEventListener("click", () => {
 prevBtn.addEventListener("click", () => {
     if ( sliderPos ) {
         sliderPos += 100;
-        sliderContainer.style.transform = `translateX(${sliderPos}vw)`;
-        
+        sliderContainer.style.transform = `translateX(${sliderPos}vw)`;  
         nextBtn.style.display = "block";
-        prevBtn.style.display = sliderPos === 0 ? "none" : "block";
+
+        if ( sliderPos === 0 ) {
+            prevBtn.style.display = "none";
+
+            nav.classList.remove("header_nav__fixed");
+            
+        };
     };
 });
