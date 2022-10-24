@@ -31,4 +31,3 @@ prevBtn.addEventListener("click", () => {
         prevBtn.style.display = sliderPos === 0 ? "none" : "block";
     };
 });
-

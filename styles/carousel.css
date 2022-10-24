@@ -12,8 +12,8 @@
 .prev,
 .next {
     background: none;
-    color: rgb(68, 79, 143);
-    text-shadow: -1px 2px rgb(42, 50, 92), -2px 3px 3px rgba(56, 56, 56, 0.568);
+    color: var(--nd-color);
+    text-shadow: -1px 2px rgb(107, 107, 107), -2px 3px 3px rgba(32, 32, 32, 0.534);
     font-size: 5rem;
     display: block;
     position: fixed;
@@ -33,14 +33,14 @@
     -o-transition: 0.5s;
 }
 .prev {
-    left: 5%;
+    left: 3%;
 }
 .next {
-    left: 95%;
+    left: 97%;
 }
 .prev:hover,
 .next:hover {
-    color: rgb(100, 116, 207);
+    color: var(--rd-color);
     font-size: 7rem;
     cursor: url("../assets/icons/cursorHM.png"), pointer;
 }
@@ -50,12 +50,12 @@
     position: relative;
     overflow-y: hidden;
 }
-.slider-item:first-of-type{
+/* .slider-item:first-of-type{
     background-color: rgb(100, 236, 195);
-}
-.slider-item:nth-child(2) {
+} */
+/* .slider-item:nth-child(2) {
     background-color: rgb(236, 192, 236);
-}
+} */
 .slider-item:nth-child(4) {
     background-image: linear-gradient(to bottom, rgb(215, 196, 238) 0%, rgb(120, 33, 219) 100%);
     font-size: 2rem;

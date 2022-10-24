@@ -4,25 +4,25 @@
 
 @font-face {
     font-family: 'Milky-Coffee';
-    src: url(/assets/fonts/FiraSansExtraCondensed-ExtraBold.ttf);
+    src: url(/assets/fonts/Bebas\ Neue\ Pro\ Bold.otf);
 }
 @font-face {
     font-family:'Mithella-Bold' ;
-    src: url(/assets/fonts/TitanOne-Regular.ttf);
+    src: url(/assets/fonts/Bebas\ Neue\ Pro\ Regular.otf);
 }
 @font-face {
     font-family: "Mithella-Regular";
-    src: url(/assets/fonts/Hind-Regular.ttf);
+    src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 
 
 :root {
     /* Colores */
-    --main-color: rgb(241, 240, 232);
-    --nd-color: #31a6d4;
-    --rd-color: #bb2f70;
-    --th-color: #292929;
+    --main-color: rgb(243, 242, 242);
+    --nd-color: #7a7a7a;
+    --rd-color: #d61f5c;
+    --th-color: #3f3f3f;
 
     /* Tipografía */
     --title-font: 'Milky-Coffee', cursive;
