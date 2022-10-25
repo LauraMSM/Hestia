@@ -2,6 +2,7 @@ const $ = selector => document.querySelector(selector);
 const $$ = selector => document.querySelectorAll(selector);
 
 
+
 const nextBtn = $(".next");
 const prevBtn = $(".prev");
 prevBtn.style.display = "none";
