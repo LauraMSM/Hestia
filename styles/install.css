@@ -1,0 +1,67 @@
+.install {
+    width: 85%;
+    margin: 3.7rem auto;
+}
+.install h2 {
+    color: var(--rd-color);
+    font-size: 5rem;
+    font-family: var(--subtitle-font);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.install_step {
+    font-size: 1.5rem;
+    margin: 3rem auto 5rem;
+}
+.install_step h3 {
+    font-size: 3rem;
+    margin: 0.5em 0;
+}
+.install_step p {
+    text-align: justify;
+    margin: 2em 0;
+}
+.install_step img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.code-item {
+    background-color: rgb(240, 224, 196);
+    color: var(--nd-color);
+    width: 100%;
+    margin: 1.5em 0 2.2em;
+    padding: 1em 2em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.code-item p {
+    margin: 0;
+}
+.code-item_text {
+    color: rgb(124, 108, 79);
+    font-family: var(--body-font);
+    margin: 0 2em;
+}
+.code-item:last-of-type {
+    font-size: 1.4rem;
+}
+
+.os-list {
+    margin-top: 0.75em;
+}
+.os-list li {
+    list-style: inside url(../assets/icons/cube-solid.svg);
+}
+.os-list li::marker {
+    font-size: 2.3rem;
+}
+
+.hestia-doc {
+    text-align: center;
+    padding: 2em 0 5em;
+}

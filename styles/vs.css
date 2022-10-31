@@ -87,7 +87,7 @@
     font-size: 2rem;
     font-family: var(--title-font);
     padding: 0.5em 2em;
-    box-shadow: -2px 2px 5px 3px rgba(73, 73, 73, 0.247);
+    box-shadow: -2px 2px 5px 1px rgba(73, 73, 73, 0.37);
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -97,4 +97,12 @@
     bottom: 5rem;
     right: 5rem;
     z-index: 1;
+    transition: 0.35s;
+    -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    -ms-transition: 0.35s;
+    -o-transition: 0.35s;
+}
+.start-btn:hover {
+    box-shadow: -1px 1px 1px 1px rgba(19, 19, 19, 0.685);
 }

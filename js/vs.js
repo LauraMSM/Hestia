@@ -27,7 +27,7 @@ const vestaPros = () => {
 };
 
 const timeOutArr = (array, container) => {
-    if ( started <= 2 ) {
+    if ( started < 2 ) {
         array.forEach((e, i) => {
             setTimeout(() => {
                 container.innerHTML += `

@@ -50,14 +50,6 @@
     position: relative;
     overflow-y: hidden;
 }
-/* .slider-item:first-of-type{
-    background-color: rgb(100, 236, 195);
-} */
-/* .slider-item:nth-child(2) {
-    background-color: rgb(236, 192, 236);
-} */
-.slider-item:nth-child(4) {
-    background-image: linear-gradient(to bottom, rgb(215, 196, 238) 0%, rgb(120, 33, 219) 100%);
-    font-size: 2rem;
+.slider-item__scroll-y {
     overflow-y: scroll;
 }
