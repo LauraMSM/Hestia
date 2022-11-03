@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HESTIA CP - Uso e Instalación</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/carousel.css">
@@ -28,6 +28,11 @@
     </div> -->
     <div class="slider-container">
 <!--         <div class="slider-item header">
+            <div class="members">
+                <p>Mónica Roka</p>
+                <p>José Falcón</p>
+                <p>Laura Sarmiento</p>
+            </div>
             <div class="header_title">
                 <h1>HESTIA</h1>
                 <h2>PANEL DE CONTROL</h2>
@@ -98,7 +103,7 @@
             </div>
         </div> -->
 
-        <div class="slider-item slider-item__scroll-y">
+<!--         <div class="slider-item slider-item__scroll-y">
             <div class="install">
                 <h2>Instalación</h2>
                 <div class="install_step">
@@ -159,17 +164,90 @@
             </div>
 
             <p class="hestia-doc">*Más opciones y ejemplos sobre la instalación el la <span><a href="https://www.hestiacp.com/">Documentación</a></span></p>
-        </div>
+        </div> -->
 
         <div class="slider-item slider-item__scroll-y">
             <div class="install">
                 <h2>PANEL DE CONTROL DE HESTIA</h2>
+
+                <div class="install_step">
+                    <h3>CREAR USUARIO</h3>
+                    <p>Para crear un usuario debemos hacer <span>click</span> en <span>add user</span> y, como resultado, tenemos el siguiente formulario:</p>
+                    <img src="assets/img/control-panel/users-add-user.PNG" alt="">
+                    <p>Rellenamos los datos pertinentes (nombre de usuario, nombre, correo electrónico, contraseña…)</p>
+                    <img class="install_step_img__small" src="assets/img/control-panel/create-user-1.png" alt="">
+                    <p>Podemos no permitirle que acceda al panel de control (si le damos a éste, desaparece la opción de enviarle correo de bienvenida), y de enviarle un correo de bienvenida, asignar su rol y escoger un paquete:</p>
+                    <img class="install_step_img__small" src="assets/img/control-panel/create-user-2.png" alt="">
+                    <p>Le damos a guardar (<span>botón de "save"</span>) y nos aparece que el usuario se ha añadido correctamente</p>
+                    <img src="assets/img/control-panel/create-user-3.png" alt="">
+                    <p>Si entramos con el nombre de usuario, nos muestra el siguiente panel en el cual se le permite crear tantos <span>dominios web</span>, al igual que <span>DNS, cuentas de correo y bases de datos</span> tantas como le sea necesario, a excepción del <span>backup</span>, que sólo permite una</p>
+                    <img src="assets/img/control-panel/user-panel-new.png" alt="">
+
+                    <h4>FILES</h4>
+                    <p>Si vamos al apartado de archivos, justo al lado de <span>records</span>, nos sale lo siguiente:</p>
+                    <img class="install_step_img__small" src="assets/img/control-panel/files.png" alt="">
+
+                    <h4>STATISTICS</h4>
+                    <P>En el apartado de estadísticas, nos sale el siguiente histórico de registros, en que nos muestra la actividad del usuario (dominios, DNS, bases de datos…etc)</P>
+                    <img src="assets/img/control-panel/stadistics.png" alt="">
+                </div>
+
+                <div class="install_step">
+                    <h3>CREAR DOMINIO</h3>
+                    <p>Volviendo a la cuenta de administrador, en este caso, de dominios sólo se puede crear uno, que ya la había creado previamente, podemos echarle un vistazo a verla por dentro:</p>
+                    <img src="assets/img/control-panel/domain.png" alt="">
+                    <p>Por otro, lado encontramos:</p>
+                    <img class="install_step_img__small" src="assets/img/control-panel/domain-2.png" alt="">
+                </div>
+
+                <div class="install_step">
+                    <h3>COMO USUARIO (USER)</h3>
+                    <h4>CREAR DOMINIO WEB</h4>
+                    <p>Para crear un sitio web desde el panel de hestia, vamos a la sección web, y hacemos clic en <span>add web domain</span>:</p>
+                    <img src="assets/img/user-hestiacp/web-domain-as-user.PNG" alt="">
+                    <p>Escogemos el nombre de la página que queramos crear, la dirección IP ya la tenemos asignada, y nos aparecen a continuación dos opciones: el de crear automáticamente una DNS, y el de habilitar el correo electrónico para el dominio a crear. Le damos a guardar y nos sale que el dominio web se ha creado correctamente</p>
+                    <img src="assets/img/user-hestiacp/web-domain-as-user-successfully.PNG" alt="">
+                    <h4>DNS</h4>
+                    <p>Anteriormente, vimos cómo se creaba un dominio web como usuario y, al crearla, si nos pasamos a la sección DNS (Domain Name System), tenemos creada una “zona” DNS:</p>
+                    <img src="assets/img/user-hestiacp//dns-list.PNG" alt="">
+                    <p>Y que, si hacemos clic en esa zona DNS tenemos registros DNS, que son un conjunto de instrucciones que dan información sobre el dominio, como su dirección ip asociada o las peticiones dirigidas a ese dominio:</p>
+                    <img src="assets/img/user-hestiacp/dns-records.PNG" alt="">
+                    <h4>CORREO</h4>
+                    <p>Al igual que con el DNS, también tenemos un “dominio” de correo asignado a <span>escuelanaluisa.com</span>. Para crear una cuenta de correo, le damos a añadir, y nos sale lo siguiente:</p>
+                    <img src="assets/img/user-hestiacp/mail-create.PNG" alt="">
+                    <p>Y en opciones avanzadas, podemos limitar la cuota de Mb, crear alias, mover a, limitar la cantidad de correos por hora…etc.
+                    </p>
+                    <img src="assets/img/user-hestiacp/mail-advanced-options.PNG" alt="">
+                    <p>Y en esta vemos que se ha creado la cuenta con éxito</p>
+                    <img src="assets/img/user-hestiacp/mail-create-successfully.PNG" alt="">
+                    <h4>BASE DE DATOS</h4>
+                    <P>También podemos crear una base de datos, haciendo clic en la sección BD, add database:</P>
+                    <img src="assets/img/user-hestiacp/database-create.PNG" alt="">
+                    <p>Y en opciones avanzadas tenemos seleccionada el host, y el charset (en este caso, la universal UTF-8):</p>
+                    <img src="assets/img/user-hestiacp/database-create-2.PNG" alt="">
+                    <h4>BACKUP</h4>
+                    <p>Al hacer clic sobre create <span>backup</span>, se muestra un mensaje que comunica que se ha creado automáticamente, podemos ver el resultado en esta imagen:</p>
+                    <img src="assets/img/user-hestiacp/backup-create.PNG" alt="">
+                </div>
+                <p class="hestia-doc"><a href="https://www.youtube.com/playlist?list=PLuOYs5rbJc8mACUSU0VP4oeQUHbgZDHoe">*Vídeos donde encontrar más información</a></p>
             </div>
         </div>
 
         <div class="slider-item slider-item__scroll-y">
             <div class="install">
                 <h2>SERVIDORES FTP</h2>
+                
+                <div class="install_step">
+                    <h3>Cómo crearlo</h3>
+                    <p>En primer lugar, nos dirigimos al "lápiz" para poder editar el dominio</p>
+                    <img src="assets/img/ftp/01.png" alt="">
+                    <p>Bajamos y en las opciones tendremos que seleccionar "<span>Additional FTP account(s)</span>". De esta manera podremos añadir un usuario al servidor ftp</p>
+                    <img src="assets/img/ftp/02.png" alt="">
+                    <p>Llegados a este punto nos solicitará que ingresemos un nombre de usuario y una contraseña. Una vez hecho esto, tendremos que presionar sobre el botón de <span>Add FTP account</span></p>
+                    <img src="assets/img/ftp/03.png" alt="">
+                    <p>Una vez realizado el paso anterior, tendremos acceso al <span>FTP</span> con la dirección IP y el resto de datos pertinentes. En nuestro caso hemos accedido con el programa de Filezilla</p>
+                    <img src="assets/img/ftp/04.png" alt="">
+                </div>
             </div>
         </div>
     </div>

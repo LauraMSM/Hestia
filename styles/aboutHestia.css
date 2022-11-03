@@ -1,7 +1,7 @@
 .about-hestia-cards-container {
     width: 90%;
     height: 85vh;
-    margin: 5em auto;
+    margin: 7.25em auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,7 +10,7 @@
 .about-hestia_card {
     text-align: center;
     width: 20%;
-    height: 50%;
+    height: 48%;
     border-bottom: 0.25em solid var(--th-color);
     position: relative;
     overflow: hidden;
@@ -24,6 +24,7 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    z-index: 3;
 }
 .about-hestia_card:hover {
     box-shadow: -2px 3px 3px 1px rgba(82, 82, 82, 0.479);
